@@ -19,7 +19,7 @@ class App extends React.Component {
   addEventHandler(event){
     addEvent(event)
       .then((event) => {
-        this.setState({EventList:[event, ...this.state.EventList]})
+        this.setState({EventList:[event, ...this.state.EventList],originalList:[event, ...this.state.originalList]})
       })
       .catch(console.error)
   }
