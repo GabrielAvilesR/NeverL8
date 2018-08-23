@@ -1,0 +1,156 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+    background-color:#e6e6ff
+}
+.container-fluid{
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+}
+
+.viewContainer{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    margin-left:1.5%;
+    z-index:-1;
+}
+
+.Header{
+    text-align:center;
+    margin-bottom:-0.65%;
+    #title{
+        font-weight:bolder;
+        background-color:#b3b3ff;
+        font-family: Georgia, serif;
+        font-size:4em;
+        border-radius:25px;
+        margin:1%;
+    }
+}
+
+.Event{
+    .element{
+        background-color:#ffffff;
+        margin:2%;
+        border-radius:25px;
+        overflow:hidden;
+        .element-title{
+            .title{
+                text-align:center;
+                font-weight:bold;
+                background-color:#b3b3ff;
+                font-family: Georgia, serif;
+                font-size:2em;
+                padding-left:5%;
+                padding-right:5%;
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .element-body{
+            .element-body-left{
+                width:100%;
+                background-color:#9933ff;
+                text-align: center;
+                color:white;
+                text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+                .date{
+                   width:100%;
+                   font-family: Impact, Charcoal, sans-serif;
+                   font-weight:bolder;
+                   font-size:2em;
+                   letter-spacing:5px;
+                   margin-left:10%;
+                   margin-top:5%;
+                   margin-bottom:0;
+                }
+                .month{
+                   width:100%;
+                   font-family: Impact, Charcoal, sans-serif;
+                   font-weight:bolder;
+                   font-size:2em;
+                   margin-left:10%;
+                   margin-bottom:0;
+                }
+                .year{
+                   width:100%;
+                   font-family: Impact, Charcoal, sans-serif;
+                   font-weight:bolder;
+                   font-size:2em;
+                   margin-left:10%;
+                }
+            }
+            .element-body-right{
+                overflow-y:scroll;
+                .description{
+                    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                    padding: 1% 2% 0 2%;
+                    margin-bottom:0;
+                    text-align: justify;
+                }
+                .category{
+                    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                    padding: 0 0 0 2%;
+                    margin-bottom:0;
+                    .categoryL{
+                        font-weight:bolder;
+                        color:	#ff3333;
+                    }
+                }
+                .hour{
+                    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                    padding: 0 0 0 2%;
+                    margin-bottom:0;
+                    .hourL{
+                        font-weight:bolder;
+                        color:	#ff3333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Menu{
+    position:absolute;
+    width:50%;
+    margin-left:25%;
+    display:inline-block;
+    bottom:1%;
+    font-weight:bolder;
+    font-family: Georgia, serif;
+    font-size:1.4em;
+    .addB{
+       background-color:#e6e6ff;
+       width:15%;
+       display:inline-block;
+       margin-left:10%;
+       text-align: center;
+       padding:1%;
+       border-radius:25px;
+       border: 5px solid #000080;
+    }
+    .orderB{
+        background-color:#e6e6ff;
+       width:20%;
+       display:inline-block;
+       margin-left:15%;
+       padding:1%;
+       text-align: center;
+       border-radius:25px;
+       border: 5px solid #000080;
+    }
+    .filterB{
+        background-color:#e6e6ff;
+       width:20%;
+       display:inline-block;
+       margin-left:10%;
+       padding:1%;
+       text-align: center;
+       border-radius:25px;
+       border: 5px solid #000080;
+    }
+}
